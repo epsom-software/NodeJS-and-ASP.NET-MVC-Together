@@ -1,0 +1,9 @@
+{
+  "name": "NodeAndMvcTogether",
+  "version": "1.0.0",
+  "description": "An example of Node.js and ASP.NET MVC together.",
+  "keywords": ["nodejs", "mvc"],
+  "dependencies": {
+  },
+  "engine": "node >= 0.4.7"x
+}
