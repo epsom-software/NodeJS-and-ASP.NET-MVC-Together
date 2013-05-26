@@ -126,7 +126,6 @@
     <Content Include="Node\server.js">
       <DependentUpon>server.ts</DependentUpon>
     </Content>
-    <Content Include="Node\__server.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
