@@ -36,8 +36,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
     <Message Text="Compiling TypeScript files" />
     <Message Text="Executing tsc $(TypeScriptBuildConfigurations) @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
     
-    <Exec Condition=" Exists('$(PROGRAMFILES)\Microsoft SDKs\TypeScript\0.8.0.0\tsc.exe')"  Command="$(PROGRAMFILES)\Microsoft SDKs\TypeScript\0.8.0.0\tsc.exe $(TypeScriptBuildConfigurations) @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
-    <Exec Condition="!Exists('$(PROGRAMFILES)\Microsoft SDKs\TypeScript\0.8.0.0\tsc.exe')"  Command="tsc $(TypeScriptBuildConfigurations) @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
+    <Exec Condition="Exists('$(PROGRAMFILES)\Microsoft SDKs\TypeScript\tsc.exe')"  Command="tsc $(TypeScriptBuildConfigurations) @(TypeScriptCompile ->'&quot;%(fullpath)&quot;', ' ')" />
     
   </Target>
   
