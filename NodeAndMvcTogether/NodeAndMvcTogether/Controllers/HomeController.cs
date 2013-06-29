@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace FantasyFootballStats.Controllers
+namespace NodeAndMvcTogether.Controllers
 {
     public class HomeController : Controller
     {

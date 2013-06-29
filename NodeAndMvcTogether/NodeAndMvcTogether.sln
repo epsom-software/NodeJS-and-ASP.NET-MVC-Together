@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www", "www\FantasyFootballStats.csproj", "{CEE0159F-D303-48A7-9F91-F04676ACD1D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NodeAndMvcTogether", "NodeAndMvcTogether\NodeAndMvcTogether.csproj", "{CEE0159F-D303-48A7-9F91-F04676ACD1D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{50BD8CE2-A8BA-4C41-8E60-F814A90D0CC1}"
 	ProjectSection(SolutionItems) = preProject
