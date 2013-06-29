@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace NodeAndMvcTogether
+namespace FantasyFootballStats
 {
     public class FilterConfig
     {

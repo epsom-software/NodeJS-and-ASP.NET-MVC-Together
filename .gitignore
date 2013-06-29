@@ -158,3 +158,6 @@ $RECYCLE.BIN/
 
 #TypeSrcipt generated files:
 *.js.map
+
+node_modules/*
+www/Node/Data/*

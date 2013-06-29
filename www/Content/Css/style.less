@@ -1,0 +1,40 @@
+﻿
+.colors(@color) {
+    background-color: @color;
+    border-color: darken(@color, 20%);
+}
+
+
+body {
+    background:#dedede;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+fieldset {
+    border: none;
+}
+label {
+    border: 2px solid black;
+    padding: 3px;
+    opacity: 0.4;
+    .colors(#c8c8c8);
+}
+label:hover {
+    border: 2px solid black;
+    padding: 3px;
+    background: #c8c8c8;
+    opacity: 0.6;
+}
+label.on {
+    .colors(white);
+    opacity: 1;
+}
+.Positions label.on {
+    .colors(#ffd800);
+}
+.Teams label.on {
+    .colors(#0094ff);
+}
+

@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NodeAndMvcTogether</RootNamespace>
-    <AssemblyName>NodeAndMvcTogether</AssemblyName>
+    <RootNamespace>FantasyFootballStats</RootNamespace>
+    <AssemblyName>FantasyFootballStats</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
@@ -114,18 +114,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\GameValues.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\test0.txt" />
     <Content Include="Global.asax" />
     <TypeScriptCompile Include="Node\server.ts" />
+    <Content Include="Node\Definitions\all.d.ts" />
+    <Content Include="Node\Definitions\chai.d.ts" />
+    <Content Include="Node\Definitions\mocha.d.ts" />
     <Content Include="Node\Definitions\node.d.ts" />
     <Content Include="Node\server.js">
       <DependentUpon>server.ts</DependentUpon>
     </Content>
+    <TypeScriptCompile Include="Node\Tests\server.tests.ts" />
+    <Content Include="Node\Tests\server.tests.js">
+      <DependentUpon>server.tests.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="Scripts\Inputs.ts" />
+    <Content Include="Scripts\Definitions\jquery.d.ts" />
+    <Content Include="Scripts\Inputs.js">
+      <DependentUpon>Inputs.ts</DependentUpon>
+    </Content>
+    <Content Include="Scripts\less-1.3.3.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -137,7 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -146,7 +160,7 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="package.json" />
+    <Content Include="Content\Css\style.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -166,7 +180,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50257</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:82/</IISUrl>
+          <IISUrl>http://localhost:83/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -198,6 +212,6 @@
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\NodeAndMvcTogether\Microsoft.TypeScript.targets" />
+  <Import Project="$(SolutionDir)\Microsoft.TypeScript.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
 </Project>
