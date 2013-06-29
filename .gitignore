@@ -161,3 +161,6 @@ $RECYCLE.BIN/
 
 node_modules/*
 www/Node/Data/*
+
+.nuget/*
+packages/*
